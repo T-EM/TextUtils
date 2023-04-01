@@ -20,15 +20,27 @@ body {
 }
 
 .textBox1 {
-  display: inline-block !important;
+  display: inline-block;
   width: 47%;
   margin-right: 5%;
 }
 
 .textBox2 {
-  display: inline-block !important;
+  display: inline-block;
   width: 47%;
   vertical-align: top;
+}
+
+@media only screen and (max-width: 990px) {
+  /*Tablets [601px -> 1200px]*/
+  .textBox1 {
+    width: 100%;
+    display: block;
+  }
+  .textBox2 {
+    width: 100%;
+    display: block;
+  }
 }
 
 .btn {

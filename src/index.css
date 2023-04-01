@@ -1,0 +1,91 @@
+::-moz-selection {
+  /* Code for Firefox */
+  color: crimson;
+  background: #6edff6;
+}
+
+::selection {
+  color: crimson;
+  background: #6edff6;
+}
+
+body {
+  transition: 400ms;
+  background-color: rgb(33, 37, 43);
+  color: rgb(248, 249, 250);
+}
+
+.textBox {
+  width: 100%;
+}
+
+.textBox1 {
+  display: inline-block !important;
+  width: 47%;
+  margin-right: 5%;
+}
+
+.textBox2 {
+  display: inline-block !important;
+  width: 47%;
+  vertical-align: top;
+}
+
+.btn {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.cases .btn {
+  color: white;
+}
+
+.cases p {
+  margin-left: 15px;
+}
+
+.form-control {
+  transition: 300ms;
+}
+
+.textBox-dark {
+  background-color: rgb(40, 44, 52) !important;
+  color: snow !important;
+}
+
+.textBox-dark::placeholder {
+  color: snow;
+}
+
+.textBox-dark::-ms-input-placeholder {
+  color: snow;
+}
+
+.textBox-light {
+  background-color: snow !important;
+  color: rgb(40, 44, 52) !important;
+}
+
+.pgLine {
+  width: 95%;
+  /* height: 10px; */
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  position: fixed;
+  border: 3px solid grey;
+  /* border-radius: 5px; */
+  transition: 400ms;
+}
+
+.pgLine-red {
+  width: 0;
+  /* height: 10px; */
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  position: fixed;
+  border: 3px solid red;
+  /* border-radius: 5px; */
+  transition: 400ms;
+}

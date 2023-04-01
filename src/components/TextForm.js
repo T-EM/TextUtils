@@ -15,7 +15,7 @@ export default function TextForm(props) {
 
   //Calculations
   // let wordLength = text.match(/(\w+)/g).length;
-  let wordLength = text.split(" ").filter((element) => {
+  let wordLength = text.split(/\s+/).filter((element) => {
     return element.length !== 0;
   }).length;
   // if (

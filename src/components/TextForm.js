@@ -14,15 +14,15 @@ export default function TextForm(props) {
   const [text2, setText2] = useState("");
 
   //Calculations
-  let wordLength;
-  if (
-    text.charAt(text.length - 1) === "" ||
-    text.charAt(text.length - 1) === " "
-  ) {
-    wordLength = text.split(" ").length - 1;
-  } else {
-    wordLength = text.split(" ").length;
-  }
+  let wordLength = text.match(/(\w+)/g).length;
+  // if (
+  //   text.charAt(text.length - 1) === "" ||
+  //   text.charAt(text.length - 1) === " "
+  // ) {
+  //   wordLength = text.split(" ").length - 1;
+  // } else {
+  //   wordLength = text.split(" ").length;
+  // }
   const handleAlert = (txt) => {
     if (txt === "" || txt === " ") {
       props.showAlert("Text is empty!", "warning");

@@ -14,7 +14,10 @@ export default function TextForm(props) {
   const [text2, setText2] = useState("");
 
   //Calculations
-  let wordLength = text.match(/(\w+)/g).length;
+  // let wordLength = text.match(/(\w+)/g).length;
+  let wordLength = text.filter((element) => {
+    return element.length != 0;
+  }).length;
   // if (
   //   text.charAt(text.length - 1) === "" ||
   //   text.charAt(text.length - 1) === " "
